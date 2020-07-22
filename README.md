@@ -23,7 +23,7 @@ As a result, we got each balanced accuracy scores and classification report
 ### 1. Naive Random Oversampling   
    Accuracy Score: 0.832780705572896
 
-![Naive Random Oversampling](images\naive_random_oversampling.png)      
+![Naive Random Oversampling](https://github.com/coolwonny/ensemble_learning/tree/master/Images/naive_random_oversampling.png)      
 
 ### 2. SMOTE Oversampling   
    Accuracy Score: 0.8388510243681058
