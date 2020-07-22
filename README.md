@@ -6,13 +6,13 @@ In this project, we are going to evaluate logistic regression classifiers using 
 
 What we are going to do is to put the *'loan_status'* value as an output(y) while taking all other features as independent variables(X). We don't know what feature weighs over the others in determining the importances of features that make one a bad loan. The idea to find them is to run different ensemble learners, comparing the results from each algorithm, determining which one gives the best performance.
 
-Before doing that, we need a data preprocessing process to make the data suitable for the models. As mentioned, the number of outputs could be highly biased to good loans(or classifiead as 'low-risk'). In the Jupyter notebook, you may find that the number of *'low_risk'* is 68470 against that of *'high_risk'* 347. This imbalanced data could be leading the model to render a biased result. For avoiding the misleading, we applied several resampling methods on them; the naive random oversampling, the SMOTE oversampling, the Cluster Centroids undersampling and the combination(over and under) sampling using the **SMOTEENN** algorithm.
+Before doing that, we need a data preprocessing process to make the data suitable for the models. As mentioned, the number of outputs could be highly biased to good loans(or classifiead as 'low-risk'). In the Jupyter notebook, you may find that the number of *'low_risk'* is 68470 against that of *'high_risk'* 347. This imbalanced data could be leading the model to render a biased result. For avoiding the misleading, we applied several resampling methods on them; the **Naive Random Oversampling**, the **SMOTE oversampling**, the **Cluster Centroids Undersampling** and the **Combination(over and under) Sampling using the SMOTEENN** algorithm.
 
 After splitting the data into train and test, we needed at least two steps - encoding and scaling - for preprocessing before going into the resampling. We found there were 9 columns containing categorical data as below.
 
 ```column_list = ['home_ownership', 'verification_status', 'issue_d', 'pymnt_plan', 'initial_list_status', 'next_pymnt_d', 'application_type', 'hardship_flag', 'debt_settlement_flag']```
 
-**LabelEncoder** could be a simple tool for encoding categorical data into numerical one, but there is still a issue that Machine Learnig algotrithms will assume that two nearby values are more similar tha two distant values. Definitely this is not the case. To fix this issue, we tried to create a binary encoding by using pd.get_dummies function. 
+**LabelEncoder** could be a simple tool for encoding categorical data into numerical one, but there is still a issue that Machine Learnig algotrithms will assume that two nearby values are more similar tha two distant values. Definitely this is not the case. To fix this issue, we tried to create a binary encoding by using `pd.get_dummies` function. 
 
 Next, we might have encounter another issue unless we do concern of feature scaling for the input data differently ranging in different scales. We standardized and transformed it by using the **StandardScaler** tool.
 
