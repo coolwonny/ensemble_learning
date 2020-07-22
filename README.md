@@ -79,7 +79,8 @@ Below is the result.
 > Again, Adaboost takes the lead at 0.93
 
 #### What are the top three features?   
-> According to the result of importances shown as below,
+> According to the result of importances shown as below,    
+
 ![Feature Importances](https://github.com/coolwonny/ensemble_learning/blob/master/Images/feature_importance.png)    
 
 > 'total_rec_prncp', 'total_pymt' and 'total_pymnt_inv' are the top three features. However, we need to be discreet about the accuracy of the result because the Random Forest model does not perform well enough to take these things into account seriously. There might have been other features actually found to be more important than those top three if we improved the model with fine-tuning.
