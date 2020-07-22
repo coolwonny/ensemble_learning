@@ -23,22 +23,22 @@ As a result, we got each balanced accuracy scores and classification report
 ### 1. Naive Random Oversampling   
    Accuracy Score: 0.832780705572896
 
-![Naive Random Oversampling](https://github.com/coolwonny/ensemble_learning/tree/master/Images/naive_random_oversampling.png)      
+![Naive Random Oversampling](https://github.com/coolwonny/ensemble_learning/blob/master/Images/naive_random_oversampling.png)      
 
 ### 2. SMOTE Oversampling   
    Accuracy Score: 0.8388510243681058
 
-![SMOTE Oversampling](images/SMOTE.png)   
+![SMOTE Oversampling](https://github.com/coolwonny/ensemble_learning/blob/master/Images/SMOTE.png)   
 
 ### 3. Undersampling   
    Accuracy Score: 0.8215575767118339
 
-![Undersampling](images/undersampling.png)   
+![Undersampling](https://github.com/coolwonny/ensemble_learning/blob/master/Images/undersampling.png)   
 
 ### 4. Combination Sampling(SMOTEENN)   
    Accuracy Score: 0.8388319216626994
 
-![Combination sampling](images/combination_sampling.png)   
+![Combination sampling](https://github.com/coolwonny/ensemble_learning/blob/master/Images/combination_sampling.png)   
 
 
 #### Which model had the best balanced accuracy score?   
@@ -61,12 +61,12 @@ Below is the result.
 ### 1. Balanced Random Forest   
    Accuracy Score: 0.7887512850910909
 
-![Balanced Random Forest](images/Randomforest.png)      
+![Balanced Random Forest](https://github.com/coolwonny/ensemble_learning/blob/master/Images/Randomforest.png)      
 
 ### 2. AdaBoost   
    Accuracy Score: 0.931601605553446
 
-![Adaboost](images/adaboost.png)   
+![Adaboost](https://github.com/coolwonny/ensemble_learning/blob/master/Images/adaboost.png)   
 
 
 #### Which model had the best balanced accuracy score?    
@@ -80,7 +80,7 @@ Below is the result.
 
 #### What are the top three features?   
 > According to the result of importances shown as below,
-![Feature Importances](images/feature_importance.png)    
+![Feature Importances](https://github.com/coolwonny/ensemble_learning/blob/master/Images/feature_importance.png)    
 
 > 'total_rec_prncp', 'total_pymt' and 'total_pymnt_inv' are the top three features. However, we need to be discreet about the accuracy of the result because the Random Forest model does not perform well enough to take these things into account seriously. There might have been other features actually found to be more important than those top three if we improved the model with fine-tuning.
  
