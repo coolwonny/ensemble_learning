@@ -84,6 +84,5 @@ Below is the result.
 ![Feature Importances](https://github.com/coolwonny/ensemble_learning/blob/master/Images/feature_importance.png)    
 
 > 'total_rec_prncp', 'total_pymt' and 'total_pymnt_inv' are the top three features. However, we need to be discreet about the accuracy of the result because the Random Forest model does not perform well enough to take these things into account seriously. There might have been other features actually found to be more important than those top three if we improved the model with fine-tuning.
- 
 
-
+The data analysis is documented in [credit_risk_resampling.ipynb](https://github.com/coolwonny/ensemble_learning/blob/master/credit_risk_resampling.ipynb) and [credit_risk_ensemble.ipynb](https://github.com/coolwonny/ensemble_learning/blob/master/credit_risk_ensemble.ipynb). 
